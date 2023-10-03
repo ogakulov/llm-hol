@@ -1,3 +1,6 @@
+# IMPORTANT NOTES
+This is Work in Progress. It builds on AMP#1 to add (a) PDF processing; and (b) called a shared, deployed model
+
 # LLM Chatbot Augmented with Enterprise Data 
 
 This repository demonstrates how to use an open source pre-trained instruction-following LLM (Large Language Model) to build a ChatBot-like web application. The responses of the LLM are enhanced by giving it context from an internal knowledge base. This context is retrieved by using an open source Vector Database to do semantic search. 
