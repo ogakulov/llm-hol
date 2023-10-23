@@ -5,3 +5,12 @@ gradio==3.37.0
 transformers==4.31.0
 torch==2.0.1
 accelerate==0.21.0
+<<<<<<< HEAD
+=======
+typing-inspect==0.8.0
+typing_extensions==4.5.0
+tiktoken 
+pypdf 
+sentence_transformers==2.2.2
+langchain
+>>>>>>> b9aecbbd23f47c0288a8f08a29d35d01f4605254

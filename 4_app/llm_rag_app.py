@@ -1,6 +1,10 @@
 import os
 import gradio
+<<<<<<< HEAD
 
+=======
+import ast
+>>>>>>> b9aecbbd23f47c0288a8f08a29d35d01f4605254
 from milvus import default_server
 from pymilvus import connections, Collection
 import utils.model_llm_utils as model_llm
@@ -70,9 +74,24 @@ def get_nearest_chunk_from_vectordb(vector_db_collection, question):
         param=vector_db_search_params,
         limit=1, # limit results to 1
         expr=None, 
+<<<<<<< HEAD
         output_fields=['relativefilepath'], # The fields you want to retrieve from the search result.
         consistency_level="Strong"
     )
+=======
+        output_fields=['text'], # The fields you want to retrieve from the search result.
+        consistency_level="Strong"
+    )
+#    nearest_vectors = vector_db_collection.search(
+#        data=[question_embedding], # The data you are querying on
+#        anns_field="embedding", # Column in collection to search on
+#        param=vector_db_search_params,
+#        limit=1, # limit results to 1
+#        expr=None, 
+#        output_fields=['relativefilepath'], # The fields you want to retrieve from the search result.
+#        consistency_level="Strong"
+#    )
+>>>>>>> b9aecbbd23f47c0288a8f08a29d35d01f4605254
     
     # Print the file path of the kb chunk
     print(nearest_vectors[0].ids[0])
